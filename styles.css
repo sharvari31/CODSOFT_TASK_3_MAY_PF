@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #f8b400; /* Yellow */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+section {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-text, .intro-text {
+    max-width: 600px;
+}
+
+.about-text p, .intro-text p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.skills-container, .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill, .project {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.skill img, .project img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.skill p, .project p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #f8b400;
+    font-size: 1.2em;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #f8b400;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#resume a:hover {
+    background-color: #f8b400;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #ff6f00; /* Orange */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
+.socials {
+    margin-bottom: 10px;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.socials a:nth-child(2):hover {
+    color: #333; /* GitHub color */
+}
